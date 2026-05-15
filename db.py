@@ -33,6 +33,19 @@ def get_db_connection():
     password = _get_env("POSTGRES_PASSWORD")
     sslmode = _get_env("POSTGRES_SSLMODE", "require")
 
+
+    host = _get_env("POSTGRES_HOST")
+    port = _get_env("POSTGRES_PORT")
+    database = _get_env("POSTGRES_DB")
+    user = _get_env("POSTGRES_USER")
+    password = _get_env("POSTGRES_PASSWORD")
+
+    print("HOST:", host)
+    print("PORT:", port)
+    print("DATABASE:", database)
+    print("USER:", user)
+    print("PASSWORD EXISTS:", bool(password))
+
     if not all([host, port, database, user, password]):
         raise RuntimeError("Postgres environment variables are not fully set.")
 
