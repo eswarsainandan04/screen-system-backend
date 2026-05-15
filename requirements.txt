@@ -1,7 +1,7 @@
 # ── Web Framework ─────────────────────────────────────────────────────────────
 fastapi
 uvicorn
-pydantic
+pydantic[email]
 
 # ── Database ──────────────────────────────────────────────────────────────────
 psycopg2-binary
