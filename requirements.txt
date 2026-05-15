@@ -1,34 +1,34 @@
 # ── Web Framework ─────────────────────────────────────────────────────────────
-fastapi>=0.111.0
-uvicorn[standard]>=0.29.0
-pydantic>=2.7.0
+fastapi
+uvicorn
+pydantic
 
 # ── Database ──────────────────────────────────────────────────────────────────
-psycopg2-binary>=2.9.9
-boto3>=1.34.0
-botocore>=1.34.0
+psycopg2-binary
+boto3
+botocore
 
 # ── LLM ───────────────────────────────────────────────────────────────────────
-groq>=0.9.0
+groq
 
 # ── PDF Parsing ───────────────────────────────────────────────────────────────
-PyPDF2>=3.0.1
+PyPDF2
 
 # ── Embeddings & Vector Database ──────────────────────────────────────────────
-sentence-transformers>=2.7.0
-chromadb>=0.5.0
+sentence-transformers
+chromadb
 
 # ── Hugging Face (model hub access / tokenizers used by sentence-transformers) ─
-huggingface-hub>=0.23.0
-transformers>=4.41.0
-tokenizers>=0.19.0
+huggingface-hub
+transformers
+tokenizers
 
 # ── Environment Variables ─────────────────────────────────────────────────────
-python-dotenv>=1.0.1
+python-dotenv
 
 # ── File Upload (multipart form support for FastAPI) ──────────────────────────
-python-multipart>=0.0.9
+python-multipart
 
 # ── Numeric / ML utilities (pulled in by sentence-transformers / chromadb) ────
-torch>=2.3.0
-numpy>=1.26.0
+torch
+numpy
