@@ -15,7 +15,8 @@ from llm.sessions import router as sessions_router
 app = FastAPI(title="PGAGI Backend")
 
 allowed_origins = [
-	os.getenv("FRONTEND_ORIGIN", "http://localhost:3000"),
+    "http://localhost:3000",
+	"https://screen-system-frontend.vercel.app"
 ]
 
 app.add_middleware(
